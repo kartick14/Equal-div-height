@@ -1,0 +1,37 @@
+<div class="row collection-grid-section row-eq-height">
+  <div class="product_block  col-md-3 col-xs-6 col-sp-12">
+    <div class="product-container text-center product-block">
+      <div class="left_block">        
+        <div class="product-image-container image">
+        <a class="product_img_link" href="">        
+          <img class="img-responsive" src="">                
+        </a>      
+        </div>
+      </div>
+      <div class="right_block">
+        <div class="product-meta">
+          <h5 class="name" style="height: 27px;">
+            <a class="product-name" href="">Title</a>
+          </h5>        
+          <div class="product-desc" style="height: 116px;">Excerpt section...</div>
+          <div class="content_price">         
+          </div>        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product_block  col-md-3 col-xs-6 col-sp-12"></div>
+  <div class="product_block  col-md-3 col-xs-6 col-sp-12"></div>
+  <div class="product_block  col-md-3 col-xs-6 col-sp-12"></div>
+</div>
+<script>
+$(document).ready(function(){
+  $('.row-eq-height').each(function() {
+    var eTHeight = $(this).find('.name').innerHeight();
+    var eHeight = $(this).find('.product-desc').innerHeight();
+
+    $(this).find('.name').outerHeight(eTHeight);
+    $(this).find('.product-desc').outerHeight(eHeight);
+  });
+});
+</script>
